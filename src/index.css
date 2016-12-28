@@ -1,0 +1,106 @@
+body {
+  font-family: Lato;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+.card {
+  width:    91mm;
+  height:   55mm;
+  border:   #000000 solid 1px;
+  overflow: hidden;
+}
+.usericon {
+  position:      relative;
+  width:         192px;
+  height:        192px;
+  margin-top:    8px;
+  margin-left:   8px;
+  border-radius: .2rem;
+}
+.username {
+  position:      absolute;
+  width:         130px;
+  margin-top:    26px;
+  margin-left:   10px;
+  font-weight:   bold;
+  white-space:   nowrap;
+  text-overflow: ellipsis;
+  overflow:      hidden;
+}
+.realname {
+  position:    absolute;
+  width:       128px;
+  margin-top:  72px;
+  margin-left: 10px;
+}
+.teamicon {
+  position:     relative;
+  width:        50px;
+  height:       50px;
+  margin-top:   80px;
+  margin-left:  85px;
+  border-radius: .25rem;
+}
+button {
+  position:    relative;
+  top:         -205px;
+  margin-left: 325px;
+  opacity:     0.3;
+  border:      0;
+  background:  none;
+}
+button:hover {
+  opacity: 1;
+}
+.print_page{
+  display:          flex;
+  flex-wrap:        wrap;
+  align-content:    flex-start;
+  width:            210mm;
+  height:           297mm;
+  page-break-after: always;
+}
+.print_page:last-child{
+  page-break-after: auto;
+}
+.typeahead input {
+  font-size: 16px;
+  height: 24px;
+  margin: 5px 0px 5px;
+  padding: 2px 6px;
+  width: 179mm;
+  outline: none;
+  border: 1px solid #1c62b9;
+  border-radius: .25rem;
+}
+
+.typeahead input:focus {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+.typeahead-selector {
+  width: 182mm;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #ccc;
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+}
+.typeahead-selector li {
+  padding: 0 6px;
+}
+.typeahead-active {
+  background-color: #eee;
+}
+@media print {
+  .typeahead {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+}
