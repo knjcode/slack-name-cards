@@ -34,7 +34,7 @@ class SearchBox extends React.Component {
   render() {
     return (
       <Typeahead ref='typeahead'
-        placeholder='add a specific user or add members of channel at once'
+        placeholder='username or channel name'
         options={Team.allUsersList.concat(Team.allChannelsList)}
         onOptionSelected={this.optionSelected.bind(this)}
         customClasses={{ hover: 'typeahead-active' }}
