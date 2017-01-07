@@ -4,7 +4,7 @@ import teamInfo from '../teaminfo.json'
 
 export const allUsers = usersList.members.filter((user) => {
   // Remove deleted users and bot users
-  return user.deleted === false && user.is_bot === false
+  return user.deleted === false && user.is_bot === false && user.name !== 'slackbot'
 }).map((user) => {
   return {
     name: user.name,
