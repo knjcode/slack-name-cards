@@ -2,6 +2,8 @@
 
 Generate name cards from your slack team.
 
+Check a live demo here [https://slack-name-cards-demo.knjcode.com](https://slack-name-cards-demo.knjcode.com)
+
 ## Setup
 
 __Install pacakges__
