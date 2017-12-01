@@ -18,7 +18,7 @@ npm-debug.log
 public/favicon.ico
 
 # export files
-userslist.json
-channelslist.json
-teaminfo.json
+src/userslist.json
+src/channelslist.json
+src/teaminfo.json
 public/favicon.ico

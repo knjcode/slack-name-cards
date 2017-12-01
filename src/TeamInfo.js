@@ -1,6 +1,6 @@
-import usersList from '../userslist.json'
-import channelsList from '../channelslist.json'
-import teamInfo from '../teaminfo.json'
+import usersList from './userslist.json'
+import channelsList from './channelslist.json'
+import teamInfo from './teaminfo.json'
 
 export const allUsers = usersList.members.filter((user) => {
   // Remove deleted users and bot users

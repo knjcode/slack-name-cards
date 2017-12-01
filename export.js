@@ -51,9 +51,9 @@ Promise.all(requests).then((values) => {
   var teamInfo = JSON.parse(values[2]);
   if ( usersList.ok && channelsList.ok && teamInfo.ok ) {
     var tasks = [
-      saveAsFile(values[0], 'userslist.json'),
-      saveAsFile(values[1], 'channelslist.json'),
-      saveAsFile(values[2], 'teaminfo.json'),
+      saveAsFile(values[0], 'src/userslist.json'),
+      saveAsFile(values[1], 'src/channelslist.json'),
+      saveAsFile(values[2], 'src/teaminfo.json'),
       download(teamInfo.team.icon.image_34, 'public/favicon.ico')
     ];
     return Promise.all(tasks);
